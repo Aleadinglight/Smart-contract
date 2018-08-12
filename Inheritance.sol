@@ -1,6 +1,13 @@
 pragma solidity ^0.4.0;
 
-contract Bank {
+interface Regulator{
+    function checkValue(uint amount) returns (bool);
+    
+    function loan() returns (bool);
+
+}
+
+contract Bank is Regulator {
     // innernal : only MyFirstContract can access, not from outsite
     // we have public, private, internal (protected)
     uint private value;
@@ -15,11 +22,22 @@ contract Bank {
     }
     
     function withdraw(uint amount){
-        value -= amount;
+        if (checkValue(amount)){
+            value -= amount;    
+        }
     }
     
     function balance() returns (uint){
         return value;
+    }
+    
+    // Abstract
+    function checkValue(uint amount) returns (bool){
+        return amount <= value;
+    }
+    
+    function loan() returns (bool){
+        return value>0;
     }
 }
 
@@ -34,4 +52,5 @@ contract MyFirstContract is Bank(100){
     function getName() returns (string){
         return name;
     }
+
 }
