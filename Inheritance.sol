@@ -1,8 +1,11 @@
 pragma solidity ^0.4.0;
 
 interface Regulator{
-    function checkValue(uint amount) returns (bool);
-    function loan() returns (bool);
+    
+    function checkValue(uint amount) external returns (bool);
+    
+    function loan() external returns (bool);
+
 }
 
 contract Bank is Regulator {
@@ -11,30 +14,32 @@ contract Bank is Regulator {
     uint private value;
     
     // Constructor
-    function Bank(uint amount){
+    constructor(uint amount) public{
         value = amount;
     }
     
-    function deposit(uint amount){
+    // Simply add your modifier after the method
+    function deposit(uint amount) public{
         value += amount;
     }
     
-    function withdraw(uint amount){
+    function withdraw(uint amount) public{
         if (checkValue(amount)){
             value -= amount;    
         }
     }
     
-    function balance() returns (uint){
+    // Functions can be declared view in which case they promise not to modify the state.
+    function balance() public view returns (uint){
         return value;
     }
     
     // Abstract
-    function checkValue(uint amount) returns (bool){
+    function checkValue(uint amount) public returns (bool){
         return amount <= value;
     }
     
-    function loan() returns (bool){
+    function loan() public returns (bool){
         return value>0;
     }
 }
@@ -43,11 +48,12 @@ contract MyFirstContract is Bank(100){
     string private name;
     uint private age;
     
-    function setName(string newName){
+    function setName(string newName) public{
         name = newName;
     }
-    // comment
-    function getName() returns (string){
+    
+    // Functions can be declared view in which case they promise not to modify the state.
+    function getName() public view returns (string) {
         return name;
     }
 
