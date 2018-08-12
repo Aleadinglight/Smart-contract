@@ -1,11 +1,9 @@
 pragma solidity ^0.4.0;
 
 interface Regulator{
-    
+    // These functions should be declared as "external"
     function checkValue(uint amount) external returns (bool);
-    
     function loan() external returns (bool);
-
 }
 
 contract Bank is Regulator {
@@ -56,5 +54,5 @@ contract MyFirstContract is Bank(100){
     function getName() public view returns (string) {
         return name;
     }
-
+\
 }

@@ -5,11 +5,11 @@ contract MyFirstContract{
     uint private age;
     
     // The input must be of type JSON, remember to put the name between the quotes " "
-    function setName(string newName){
+    function setName(string newName) public{
         name = newName;
     }
     
-    function getName() returns (string){
+    function getName() public view returns (string){
         return name;
     }
 }
