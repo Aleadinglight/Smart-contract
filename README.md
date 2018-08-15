@@ -18,3 +18,9 @@ Simple tutorial and notes on how to implement Solidity and Smart Contract
 4. [Import Libraries](../master/ImportLibraries.sol): How to import libraries from [library.sol](../blob/master/library.sol).
 
 5. [Transaction](../master/transaction.sol): Event logging and information about transaction. Try to send 1 ether with the valid address.
+
+6. [Account Info](../master/accountInfo.sol): Checking the account balance and information.
+
+7. [Send crypto](): 
+
+8. [ERC20]():
