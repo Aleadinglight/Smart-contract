@@ -21,6 +21,6 @@ Simple tutorial and notes on how to implement Solidity and Smart Contract
 
 6. [Account Info](../master/accountInfo.sol): Checking the account balance and information.
 
-7. [Send crypto](): 
+7. [Subcurrency](../master/subCurrency): The simplest form of a cryptocurrency. Generating coins out of thin air, but only the person that created the contract will be able to do that. Furthermore, anyone can send coins to each other without any need for registering with username and password - all you need is an Ethereum keypair. 
 
 8. [ERC20]():
