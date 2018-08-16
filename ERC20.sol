@@ -1,6 +1,6 @@
 pragma solidity ^0.4.24;
 
-contract ERC20Interface {
+contract ERC20{
     function totalSupply() public constant returns (uint);
     function balanceOf(address tokenOwner) public constant returns (uint balance);
     function allowance(address tokenOwner, address spender) public constant returns (uint remaining);
