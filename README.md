@@ -5,7 +5,10 @@ Simple tutorial and notes on how to implement Solidity and Smart Contract
 ## Notes
 
 1. [Blockchain Basics](http://solidity.readthedocs.io/en/v0.4.24/introduction-to-smart-contracts.html): Some intuition.
+
 2. [Fallback function](../master/fallback.md): Explaining fallback function.
+
+3. [ERC20 Tokens](https://www.youtube.com/watch?v=cqZhNzZoMh8): Simple explanation for ERC20 Tokens.
 
 ## Tutorials
 
@@ -23,4 +26,5 @@ Simple tutorial and notes on how to implement Solidity and Smart Contract
 
 7. [Subcurrency](../master/subCurrency): The simplest form of a cryptocurrency. Generating coins out of thin air, but only the person that created the contract will be able to do that. Furthermore, anyone can send coins to each other without any need for registering with username and password - all you need is an Ethereum keypair. 
 
-8. [ERC20]():
+8. [ERC20](../master/ERC20.sol): The standard ERC20 for creating new Token.
+

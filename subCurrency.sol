@@ -4,6 +4,8 @@ contract Coin {
     // The keyword "public" makes those variables
     // readable from outside.
     address public minter;
+	
+	// mapping is like a hash table, each address is bind with one uint
     mapping (address => uint) public balances;
 
     // Events allow light clients to react on
@@ -16,6 +18,7 @@ contract Coin {
         minter = msg.sender;
     }
 
+	// Initiate the address corresponding value
     function mint(address receiver, uint amount) public {
         if (msg.sender != minter) return;
         balances[receiver] += amount;
