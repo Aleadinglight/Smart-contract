@@ -1,8 +1,8 @@
 # Smart-contract
 
-Simple tutorial and notes on how to implement Solidity and Smart Contract
+Implementations and notes on how to use Solidity and deploy Smart Contract
 
-## Tutorials
+## Implementations
 
 1. [First contract](../master/firstContract.sol): Implement simple contract.
 
