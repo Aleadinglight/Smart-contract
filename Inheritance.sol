@@ -1,4 +1,4 @@
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.14;
 
 interface Regulator{
     // These functions should be declared as "external"
@@ -54,5 +54,4 @@ contract MyFirstContract is Bank(100){
     function getName() public view returns (string) {
         return name;
     }
-\
 }
