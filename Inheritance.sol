@@ -1,4 +1,4 @@
-pragma solidity ^0.4.14;
+pragma solidity ^0.4.24;
 
 interface Regulator{
     // These functions should be declared as "external"
