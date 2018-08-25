@@ -22,6 +22,8 @@ Implementations and notes on how to use Solidity and deploy Smart Contract
 
 9. [New ERC20 Token](../master/MyFirstToken.sol): Create a Token using ERC20 standard. The details are a in the source code.
 
+10. [Decentralize voting](https://github.com/Aleadinglight/decentralized-voting): Create a poll vote that is automatic and completely transparent to viewers.
+
 ## Notes
 
 1. [Blockchain Basics](http://solidity.readthedocs.io/en/v0.4.24/introduction-to-smart-contracts.html): Some intuition.
